@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+/* Header Desing */
+.header {
+    position: absolute;
+    z-index: 100;
+    background: transparent;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    padding: 2px 0;
+    top: 0;
+    left: 0;
+    width: 100%;   
+}
+.container {
+    width: 91%;
+    margin: auto;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    gap: 10px;
+}
+.logo img {
+    height: 76px;
+}
+.logo-text span {
+    font-size: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu li {
+ 
+}
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+.nav-menu i.fa-chevron-down {
+    font-size: 16px;
+    margin-left: 5px;
+}
+.initial-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Dropdown general */
+.dropdown {
+ 
+}
+.dropdown > a:hover {
+  background-color: white;
+  color: black;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.dropdown-container {
+  border: 1px solid black;
+  position: absolute;
+  height: 80vh;
+  right: -40%;
+  top: 76px;
+  transform: translateX(-50%);
+  transition: 0.3s ease-in;
+  width: 90%;
+  background: #fff;
+  padding: 30px;
+  display: none;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-container {
+  display: block;
+}
+
+/* Top row */
+.dropdownup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #292929;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+.dropdownup i{
+  font-size: 16px;
+  color: #787676;
+}
+.dropdownabout {
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #787676;
+  font-size: 14px;
+}
+
+.dropdownx i {
+  cursor: pointer;
+}
+
+/* Inside columns */
+.dropdowninside {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+.dropdownleft{
+
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 15%;
+}
+.dropdowncenter, .dropdownright {
+  flex: 1;
+  width: 40%;
+}
+
+.leftlink a, .centerup a, .centerlink a {
+  display: block;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  padding: 8px 0;
+}
+
+.centerup a {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: rgb(131, 131, 131);
+  margin-bottom: 10px;
+}
+
+.centerdown .centerlink a {
+  font-size: 15px;
+}
+
+.droptitle h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #000;
+}
+.drop-card-cont{
+  display: flex;
+  gap: 20px;
+}
+.dropcard {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.dropcardimage img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.dropcardtitle {
+  width: 100%;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+
+/* Global Button */
+.language-wrapper {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      display: flex;
+      justify-content: end;
+      width: 80px;
+      margin-left: 20px;
+}
+.trigger {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+      transition: opacity 0.3s ease;
+}
+.language-wrapper:hover .trigger {
+      opacity: 0;
+      pointer-events: none;
+}
+.language-select {
+      position: absolute;
+      top: -10px;
+      left: 0;
+      background: #FFF;
+      border: none;
+      padding: 5px;
+      border-radius: 4px;
+      display: none;
+      width: 80px;
+      height: 40px;
+}
+.language-wrapper:hover .language-select {
+      display: block;
+}
+
+
+    
+/* Footer Desing */
+footer{
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #666;
+}
+footer .foot-cont{
+    width: 95%;
+    margin: auto;
+}
+footer .foot-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+footer .foot-cont .footer-social{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    list-style-type: none;
+}
+footer .foot-cont .footer-social a i{
+    font-weight: 400;
+    font-size: 22px;
+    color: #666;
+    transition: all ease-in-out 0.2s;
+}
+footer .foot-cont .footer-social a i:hover{
+    color: #242424;
+}
+footer .foot-cont .footer-navbar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 70px;
+    list-style-type: none;
+}
+footer .foot-cont .footer-navbar li{
+    cursor: default;
+    font-weight: 400;
+    font-size: 14px;
+    color: #666;
+    font-family: "Poppins", sans-serif;
+}
+footer .foot-cont .footer-navbar li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color ease-in-out 0.2s;
+    font-family: "Poppins", sans-serif;
+}
+footer .foot-cont .footer-navbar li a:hover{
+    color: #242424;
+}
+footer .foot-cont .footer-navbar li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #242424;
+    transition: width 0.3s ease, height 0.1s ease 0.3s;
+}
+footer .foot-cont .footer-navbar li a:hover::after {
+    width: 100%;
+    height: 2px;
+}

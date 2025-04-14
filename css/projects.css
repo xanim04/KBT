@@ -1,0 +1,341 @@
+/* body {
+  padding-top: 80px;
+} */
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.slider-text {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: black;
+  z-index: 2;
+  max-width: 40%;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.slider-text h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.slider-text a {
+  font-size: 0.90rem;
+  color: #ddd;
+  text-decoration: none;
+}
+
+
+  .sliderproject  h2{
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    color: black;
+
+  }
+  .hover-underline {
+    position: relative;
+    cursor: pointer;
+    margin-top: 100px;
+    display: inline-block;
+  }
+  
+  .hover-underline::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+  }
+  
+  .hover-underline:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+  
+  .hover-underline.dash {
+    cursor: default; 
+  }
+  
+  .hover-underline.dash::after {
+    display: none;
+  }
+  
+
+.slider-text .statistic-left{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    width:70%;
+}
+.slider-text .statistic-left a {
+    position: relative;
+    background-color: #fff;
+    color: black;
+    text-decoration: none;
+    padding: 26px;   
+    text-align: center;
+    font-size: 17px;
+    line-height: 24px;
+    word-spacing: 50px;
+    letter-spacing: 3px;
+    border-radius: 35px;
+    border: 2px solid white;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+    transition: all 0.6s ease;
+}
+.slider-text .statistic-left a:hover {
+    color: white;
+    border: 2px solid black;
+}
+.slider-text .statistic-left a span {
+    position: relative;
+    z-index: 2;
+}
+.slider-text .statistic-left a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    background-color: black;
+    z-index: 1;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+    border-radius: 34px;
+}
+.slider-text .statistic-left a:hover::before {
+    width: 100%;
+}
+
+/* slider sağ */
+.image-collage {
+  width: 53%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  z-index: 5;
+  display: block;
+}
+
+/* Bütün şəkillər üçün ümumi tərz */
+/* slider sağ */
+/* Slider sağ tərəf */
+.image-collage {
+  width: 53%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  z-index: 5;
+}
+
+/* Ümumi şəkil stilləri */
+.image-collage img {
+  position: absolute;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+
+/* Şəkil 1: Üst və solda */
+.img1 {
+  width: 320px;
+  height: 220px;
+  bottom: 160px;
+  right: 140px;
+  z-index: 3;
+  transform: rotate(-2deg);
+}
+
+/* Şəkil 2: Ortada */
+.img2 {
+  width: 350px;
+  height: 250px;
+  bottom: 90px;
+  right: 100px;
+  z-index: 2;
+  transform: rotate(1.5deg);
+}
+
+/* Şəkil 3: Alt və sağda */
+.img3 {
+  width: 300px;
+  height: 200px;
+  bottom: 20px;
+  right: 60px;
+  z-index: 1;
+  transform: rotate(-1deg);
+}
+
+
+
+  
+
+
+/* Project2   */
+.project2{
+  text-align: center;
+  width: 42%;
+  margin: auto;
+}
+
+.project2 h2{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 1.25rem;
+  line-height: 1.5em;
+  letter-spacing: 0;
+}
+
+.project2 p{
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #666;
+  letter-spacing: 0.25px;
+  line-height: 1.5556em;
+}
+
+/* sort */
+.projects-types {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 20px 0;
+  list-style: none;
+}
+
+.project-type {
+  cursor: pointer;
+  font-size: 16px;
+  color: #000000; 
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid #007bff;
+}
+
+.project-type:hover,
+.project-type.active {
+  color: #0056b3; 
+}
+
+
+/* projectcard */
+.projecttitle{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(4, 280px); 
+  gap: 20px;
+  justify-content: center; 
+  padding: 40px 0;
+}
+
+.project4 .project-card {
+  /* width: 280px; */
+  height: auto;
+  background-color: #fff;
+  box-shadow: 0.6rem 1.5rem 0.845rem hsla(210, 2%, 46%, .25);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  width: 100%;
+}
+
+.project4 .card-image img {
+  width: 100%;
+  height: 319px;
+  object-fit: cover; 
+  display: block;
+}
+
+
+.project4 a, 
+.project4 h2, 
+.project4 .project-name, 
+.project4 .country-name {
+  text-decoration: none;
+}
+
+
+.project4 .card-title {
+  font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.50px;
+    line-height: 2.5em;
+  color: gray;
+  padding: 10px 20px;
+}
+
+
+.project4 .card-title:hover {
+  color: black;
+}
+
+.project4 .project-info {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #666;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+  padding: 20px;
+}
+
+.project4 .project-card:hover .project-info {
+  transform: translateY(5px);
+}
+
+/* iconstyle */
+.svg-icons {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.icon {
+  cursor: pointer;
+  transition: fill 0.3s ease;
+  fill: #8f8f8f; 
+}
+
+.icon:hover {
+  fill: #007bff; 
+}
+
+.icon.active {
+  fill: #000000; 
+}
+
+
