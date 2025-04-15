@@ -9,6 +9,7 @@
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
+  background-color: #5E9FE3;
 }
 
 .slider-text {
@@ -195,9 +196,9 @@
 
 /* Project2   */
 .project2{
+  margin: 100px auto ;
   text-align: center;
   width: 42%;
-  margin: auto;
 }
 
 .project2 h2{
@@ -215,6 +216,94 @@
   color: #666;
   letter-spacing: 0.25px;
   line-height: 1.5556em;
+}
+
+/* Project3 */
+.map-container {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.map-container i{
+  width: 30px;
+  height: 30px;
+  background-color: #007bff;
+  color: white; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+.map-buttons-wrapper {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  padding: 0 20px;
+}
+
+.scroll-btn {
+  background-color: rgba(0, 123, 255, 0.8);
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.scroll-btn:hover {
+  background-color: rgba(0, 86, 179, 0.8);
+}
+
+.map-buttons {
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  margin: 0 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  scroll-behavior: smooth;
+}
+
+.map-buttons::-webkit-scrollbar {
+  height: 6px;
+}
+
+.map-buttons::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+.map-buttons button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 /* sort */

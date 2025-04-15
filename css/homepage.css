@@ -232,6 +232,12 @@
     gap: 40px;
     overflow-x: auto;
     scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .our-projects .project-container .project-slider-section .project-slider::-webkit-scrollbar {
+    display: none;
   }
 
   .our-projects .project-container .project-slider-section .project-slider .project-card {
@@ -274,7 +280,12 @@
     border-radius: 50%;
     cursor: pointer;
     background-color: #5e9fe3;
+    transition: 0.3s ease-in;
   }
+
+  .our-projects .project-container .project-slider-section .project-slider-buttons .proj-button:hover {
+    transform: scale(1.1);
+}
 
   .our-projects .project-container .project-slider-section .project-slider-buttons .proj-button i {
     font-weight: 900;
