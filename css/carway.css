@@ -1,4 +1,4 @@
-.service-div{   
+.carway{   
     width: 100%;
     height: 100%;
     /* padding-left: 25px; */
@@ -12,83 +12,24 @@
     /* max-width: 580px; */
 
 }
-.service-div img{
-    margin-bottom: 10px;
+.carway img{
+    margin-bottom: 6px;
+    margin-top: 4rem;
 }
 
-.service-div h2{
-    font-weight: 600;
-    font-size: 2rem;
-    letter-spacing: 0;
-    line-height: 1.5em;
-    margin-bottom: 1.25rem;
-    max-width: 580px;
-
-}
-.service-div p{
+.carway p{
     font-weight: 400;
-    font-size: 1.125rem;
+    font-size: 14px;
     letter-spacing: .25px;
     line-height: 1.5556em;
     text-align: center;
     color: #666;
-    max-width: 580px;
+    max-width: 800px;
 }
 
-.business-lines {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-  }
-  
-  .business-lines h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 30px;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .card img {
-    width: 80%;
-    /* height: auto; */
-    height: 80%;
-    object-fit: cover;
-  }
-  
-  .card h3 {
-    font-size: 16px;
-    margin: 12px 0 6px;
-  }
-  
-  .card a {
-    font-size: 13px;
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-  }
-  
-  .card a:hover {
-    text-decoration: underline;
-  }
-  
 
 
-
-
-
-  .news-section {
+.news-section {
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -252,3 +193,8 @@
 }
 
   
+
+
+
+
+
